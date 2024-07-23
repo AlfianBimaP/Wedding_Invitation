@@ -1,0 +1,125 @@
+.frame {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column; /* Ubah dari row ke column untuk layout vertikal */
+    align-items: center;
+    width: 100%;
+}
+
+.frame .frame-wrapper {
+    background-color: #ffffff;
+    width: 430px;
+    height: auto;
+}
+
+.frame .text-section {
+    text-align: center;
+    /* margin-bottom: 20px; */
+}
+
+
+.frame .div-wrapper {
+    position: relative;
+    width: 382px;
+    height: 880px;
+    /* top: 29px; */
+    left: 24px;
+    right: 34px;
+}
+
+.frame .div1 {
+    position: relative;
+    /* height: 880px; */
+}
+
+.frame .div {
+    position: relative;
+    height: 880px;
+    margin-bottom: 20px;
+}
+
+.frame .welcome-to-dickson {
+    /* letter-spacing: 2px;  */
+    word-spacing: 4px;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+    padding: 10px 0 0px 0;
+    line-height: 1.2;
+    font-family: 'Cinzel', sans-serif;
+    text-align: center;
+}
+
+.frame .together-with-joyful {
+    font-size: 14px;
+    word-spacing: 4px;
+    font-style: italic;
+    margin: 0;
+    /* padding: 0px 0 20px 0; */
+    line-height: 1.0;
+    font-family: 'Times New Roman', sans-serif;
+    text-align: center;
+}
+
+.frame .rectangle-copy, 
+.frame .img, 
+.frame .rectangle-copy-2, 
+.frame .rectangle-copy-3, 
+.frame .rectangle-copy-4, 
+.frame .rectangle {
+    position: absolute;
+    object-fit: cover;
+}
+
+.frame .rectangle-copy {
+    height: 204px;
+    top: 321px;
+    left: 35px;
+    width: 154px;
+}
+
+.frame .img {
+    height: 129px;
+    top: 339px;
+    left: 205px;
+    width: 154px;
+}
+
+.frame .rectangle-copy-2 {
+    height: 216px;
+    top: 539px;
+    left: 35px;
+    width: 154px;
+}
+
+.frame .rectangle-copy-3 {
+    height: 233px;
+    top: 484px;
+    left: 205px;
+    width: 154px;
+}
+
+.frame .rectangle-copy-4 {
+    width: 154px;
+    height: 288px;
+    top: 35px;
+    
+    left: 205px;
+}
+
+.frame .rectangle {
+    width: 154px;
+    height: 288px;
+    
+    left: 35px;
+}
+
+.text-section {
+    margin-bottom: 20px;
+}
+
+.images-section {
+    padding-top: 20px;
+    
+    box-sizing: border-box;
+}
