@@ -31,6 +31,26 @@ body {
     font-family: 'Times New Roman Italic';
     src: url('/fonts/times-new-roman.ttf') format('truetype');
 }
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes slideInUp {
+    from {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
 
 /* Hero Section Styles */
 
@@ -50,7 +70,7 @@ body {
     margin: 0 0 0 0;
     font-weight: 100;
     position:absolute;
-    
+    animation: fadeIn 3s ease-in-out; /* Animasi fade-in */
 }
 
 .text-overlay span {
@@ -61,6 +81,7 @@ body {
     position: absolute;
     top:22%;
     right: 29%;
+    animation: fadeIn 3.5s ease-in-out; /* Animasi fade-in */
 }
 
 .text-overlay p {
@@ -73,7 +94,8 @@ body {
     font-weight: 600;
     letter-spacing: 2px;
     position: absolute;
-    top: 65%
+    top: 65%;
+    animation: fadeIn 4s ease-in-out;
 }
 
 /* Frame Section Styles */
@@ -142,6 +164,8 @@ body {
     line-height: 1.2;
     font-family: 'Cinzel', sans-serif;
     text-align: center;
+    opacity: 0; /* Initial state */
+    animation: fadeIn 3s ease-in-out forwards;
 }
 
 .frame .together-with-joyful {
@@ -153,6 +177,8 @@ body {
     line-height: 1.0;
     font-family: 'Times New Roman', sans-serif;
     text-align: center;
+    opacity: 0; /* Initial state */
+    animation: fadeIn 3.5s ease-in-out forwards;
 }
 
 .frame .rectangle-copy, 
@@ -163,6 +189,8 @@ body {
 .frame .rectangle {
     position: absolute;
     object-fit: cover;
+    opacity: 0; /* Initial state */
+    animation: slideInUp 3s ease-in-out forwards;
 }
 
 .frame .rectangle-copy {
@@ -170,6 +198,7 @@ body {
     top: 321px;
     left: 35px;
     width: 154px;
+    animation-delay: 0.5s;
 }
 
 .frame .img {
@@ -177,6 +206,7 @@ body {
     top: 339px;
     left: 205px;
     width: 154px;
+    animation-delay: 1s;
 }
 
 .frame .rectangle-copy-2 {
@@ -184,6 +214,7 @@ body {
     top: 539px;
     left: 35px;
     width: 154px;
+    animation-delay: 1.5s;
 }
 
 .frame .rectangle-copy-3 {
@@ -191,6 +222,7 @@ body {
     top: 484px;
     left: 205px;
     width: 154px;
+    animation-delay: 2s;
 }
 
 .frame .rectangle-copy-4 {
@@ -198,12 +230,14 @@ body {
     height: 288px;
     top: 35px;
     left: 205px;
+    animation-delay: 2.5s;
 }
 
 .frame .rectangle {
     width: 154px;
     height: 288px;
     left: 35px;
+    animation-delay: 3s;
 }
 
 .text-section {

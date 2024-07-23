@@ -6,15 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wedding Invitation - Dickson & Friska</title>
     <link rel="stylesheet" href="{{ asset('assets/css/style_combined.css') }}">
-    {{--
-    <link href="https://fonts.googleapis.com/css2?family=Grapevine:400italic&display=swap" rel="stylesheet"> --}}
+    <script src="{{ asset('assets/js/javascript.js') }}"></script>
     <link href='https://fonts.googleapis.com/css?family=Cinzel' rel='stylesheet'>
 </head>
 
 <body>
     <div class="frame">
         <div class="hero-section">
-            <img src="{{ asset('storage/img/Bunga(top1).png') }}" alt="Flower Decoration" class="hero-image">
+            <img src="{{ asset('storage/img/Bunga(top1).jpg') }}" alt="Flower Decoration" class="hero-image">
             <div class="text-overlay">
                 <h1 style="left: 0%;">Dickson </h1>
                 <span style="left: 15%">And</span>
@@ -44,7 +43,7 @@
             <h1 class="as-they">as they unite in marriage</h1>
         </div>
         <div class="invitation-section">
-            <img src="{{ asset('storage/img/Bunga2.png') }}" alt="Flower Decoration" class="hero-image">
+            <img src="{{ asset('storage/img/Bunga2.jpg') }}" alt="Flower Decoration" class="hero-image">
             <div class="text-overlay-2">
                 <h2 class="ceremony-title">WEDDING <br> BLESSING <br> CEREMONY</h2>
                 <p class="ceremony-time">at 09:00 in the morning</p>
@@ -119,7 +118,7 @@
             </div>
         </div>
         <div style="position: relative; width: 100%; margin-bottom: 0px; max-width:430px; height: auto;">
-            <img src="{{ asset('storage/img/fotter-img1.jpg') }}" alt="Try Our Filter" class="try-filter-image">
+            <img src="{{ asset('storage/img/footter-img.png') }}" alt="Try Our Filter" class="try-filter-image">
             <span class="container">
                 <span class="filter-text">TRY OUR FILTER</span>
                 <a href="https://www.instagram.com" class="instagram-link">GO TO INSTAGRAM</a>
