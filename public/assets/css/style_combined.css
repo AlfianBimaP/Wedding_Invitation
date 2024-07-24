@@ -92,13 +92,20 @@ body {
     text-align: center;
     background-color: #fff;
     position: relative;
+    max-width: 430px;
+    overflow: hidden;
     /* padding-top: 20px; */
 }
 
 .hero-image {
+    display: flex;
     max-width: 100%;
     height: auto;
     object-fit: cover;
+    transform: rotate(15deg);
+    position:relative; 
+    top: -53px; 
+    right: 74px;
     
     /* position: absolute;
     top: -75px; */
@@ -219,7 +226,75 @@ body {
 .additional-image-section {
     margin-top: 20px;
     text-align: center;
+    position: relative;
 }
+
+.text-overlay-6{
+    position: absolute;
+    top: 12%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    color: #000;
+    width: 430px;
+
+}
+
+.with-great-joy{
+    font-family: 'Times New Roman', 'sans-serif';
+    font-size: 1.3rem;
+    font-weight: lighter;
+    margin: 0 0;
+    line-height: 1.2;
+    text-align: left;
+}
+
+.Dickson {
+    font-family: 'Cinzel', 'serif';
+    font-size: 2.2rem;
+    font-weight: 500;
+    margin: 0 0;
+    line-height: 1.2;
+    text-align: left;
+}
+
+.son-of {
+    font-family: 'Times New Roman Italic', 'serif';
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin: 0 0;
+    line-height: 1.2;
+    text-align: left;
+}
+
+.text-overlay-7{
+    position: absolute;
+    top: 24%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    color: #000;
+    width: 245px;
+    
+}
+
+.Friska {
+    font-family: 'Cinzel', 'serif';
+    font-size: 2.2rem;
+    font-weight: 500;
+    margin: 0 0;
+    line-height: 1.2;
+    text-align: right;
+}
+
+.daughter-of {
+    font-family: 'Times New Roman Italic', 'serif';
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin: 0 0;
+    line-height: 1.2;
+    text-align: right;
+}
+
+
 
 .additional-image {
     max-width: 100%;

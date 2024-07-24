@@ -1,22 +1,12 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\RSVPController;
+use App\Http\Controllers\BestWishesController;
 
 Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::get('/main', function () {
-    return view('main');
-});
-Route::get('/section1', function () {
-    return view('section1');
-});
-
-Route::get('/section2', function () {
-    return view('section2');
-});
-
-Route::get('/sectionx', function () {
     return view('section_combined');
 });
+
+Route::post('/submit-rsvp', [RSVPController::class, 'store'])->name('rsvp.store');
+Route::post('/submit-best-wishes', [BestWishesController::class, 'store'])->name('best-wishes.store');

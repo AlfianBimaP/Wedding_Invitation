@@ -6,15 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wedding Invitation - Dickson & Friska</title>
     <link rel="stylesheet" href="{{ asset('assets/css/style_combined.css') }}">
-    {{--
-    <link href="https://fonts.googleapis.com/css2?family=Grapevine:400italic&display=swap" rel="stylesheet"> --}}
     <link href='https://fonts.googleapis.com/css?family=Cinzel' rel='stylesheet'>
 </head>
 
 <body>
     <div class="frame">
         <div class="hero-section">
-            <img src="{{ asset('storage/img/Bunga(top1).png') }}" alt="Flower Decoration" class="hero-image">
+            <img src="{{ asset('storage/img/Animasi_Pohon.gif') }}" alt="Flower Decoration" class="hero-image">
             <div class="text-overlay">
                 <h1 style="left: 0%;">Dickson </h1>
                 <span style="left: 15%">And</span>
@@ -35,6 +33,18 @@
                 <img class="rectangle-copy-3" src="{{ asset('storage/img/Gallery 6.png') }}" />
                 <img class="rectangle-copy-4" src="{{ asset('storage/img/Gallery 2.png') }}" />
                 <img class="rectangle" src="{{ asset('storage/img/Gallery 1.png') }}" />
+            </div>
+        </div>
+        <div class="additional-image-section">
+            <img src="{{ asset('storage/img/img-middlle.png') }}" alt="Additional Image" class="additional-image">
+            <div class="text-overlay-6">
+                <h2 class="with-great-joy">With great joy, <br> we introduce the groom,</h2>
+                <h2 class="Dickson">Dickson Kowandi</h2>
+                <p class="son-of">Son of Irwan <br> & Dorrena Kowandi</p>
+            </div>
+            <div class="text-overlay-7">
+                <h1 class="Friska">Friska Wijaya</h1>
+                <p class="daughter-of">Daughter of Adi Wijaya <br> & Tutik Wijaya</p>
             </div>
         </div>
         <div class="additional-image-section">
@@ -69,7 +79,8 @@
         <div class="rsvp-section">
             <h2 class="rsvp-title">RSVP</h2>
             <p class="rsvp-instruction">Please confirm your attendance <br> by filling out the following form.</p>
-            <form action="/submit-rsvp" method="POST" class="rsvp-form">
+            <form action="{{ route('rsvp.store') }}" method="POST" class="rsvp-form">
+                @csrf
                 <label for="name">Name</label>
                 <input type="text" id="name" name="name" required>
 
@@ -85,13 +96,14 @@
         <div class="best-wishes-section">
             <h2 class="best-wishes-title">BEST WISHES</h2>
             <p class="best-wishes-subtitle">Kindly convey your prayers and best wishes.</p>
-            <form action="/submit-wishes" method="POST" class="best-wishes-form">
+            <form action="{{ route('best-wishes.store') }}" method="POST" class="best-wishes-form">
+                @csrf
                 <!-- <label for="your-name">Your Name</label> -->
-                <input style="background-color: #fff;" type="text" id="your-name" name="your_name"
+                <input style="background-color: #fff; color: #000;" type="text" id="your-name" name="name"
                     placeholder="YOUR NAME" required>
 
                 <!-- <label for="ucapan">Ucapan</label> -->
-                <textarea style="background-color: #fff;" id="ucapan" name="ucapan" placeholder="UCAPAN"
+                <textarea style="background-color: #fff; color: #000;" id="ucapan" name="ucapan" placeholder="UCAPAN"
                     required></textarea>
 
                 <button type="submit" class="submit-button">Submit</button>
